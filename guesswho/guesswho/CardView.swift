@@ -41,7 +41,7 @@ struct CardView: View {
                     Rectangle()
                         .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                         .frame(height: 3)
-                Text(cardStruct.filename.capitalized)
+                Text(cardStruct.name.capitalized)
                         .font(.caption)
                         .bold()
                         .padding(3)

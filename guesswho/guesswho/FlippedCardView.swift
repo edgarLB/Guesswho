@@ -16,7 +16,7 @@ struct FlippedCardView: View {
 //            .frame(width: 90)
             .onTapGesture {
                 presenter.flipButtonTapped()
-                
+                print(cardStruct.filename)
             }
             .rotation3DEffect(.degrees(presenter.isFlipped ? 180 : 0), axis: (x: 0, y: 1, z: 0))
                         .animation(.default, value: presenter.isFlipped)
